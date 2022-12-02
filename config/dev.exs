@@ -2,13 +2,15 @@ import Config
 
 # Configure your database
 config :phoenix_market_data, PhoenixMarketData.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "root",
+  password: "",
   hostname: "localhost",
-  database: "phoenix_market_data_dev",
+  database: "data",
   stacktrace: true,
+  port: 26_257,
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 10,
+  migration_lock: false
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
